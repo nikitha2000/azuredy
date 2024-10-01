@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cloud Computing Services | Microsoft Azure</title>
+</head>
+<body>
+    <header>
+    <div class="mob-header">
+        <div class="mheader1">
+            <div class="searchbar">
+                <div class="barbtn" onclick="toggleDroopdown(this)"></div>
+
+                <ul class="dropdown-content mobdrop" >
+                    <li style="min-height:0px; padding: 0;"></li>
+                    <li style="min-height:0px; padding: 0;"></li>
+                    <li style="min-height:0px; padding: 0;"></li>
+                    <li>Microsoft 365</li>
+                    <li>Teams</li>
+                    <li>Copilot</li>
+                    <li>Windows</li>
+                    <li>Surface</li>
+                    <li>Xbox</li>
+                    <li>Support</li>
+                    <li>Software</li>
+                    <li>PCs & Devices</li>
+                    <li>Entertainment</li>
+                    <li>Business</li>
+                    <li>Developer & IT</li>
+                    <li>Other</li>
+                    <li>View Sitemap</li>
+                </ul>
+
+                <div class="barbtn2"></div>
+                
+            </div>
+            <div class="logo"><img src="/assets/desklogo.png"></div>
+        </div>
+        <div class="mheader2">
+             <div class="azuretxt" onclick="toggleDroopdown(this)"> Azure </div>
+            
+
+            <ul class="dropdown-content azuredrp">
+                <li>Home</li>
+                <li>Explore</li>
+                <li>Products</li>
+                <li>Solutions</li>
+                <li>Pricing</li>
+                <li>Partners</li>
+                <li>Resources</li>
+                <li>Learn</li>
+                <li>Support</li>
+                <li>Contact Sales</li>
+                <li>Get started with Azure</li>
+                <li>Sign in</li>
+                
+            </ul>
+
+        </div>
+    </div> 
+    <div class="barbtnopen">
+        <div class="barbtn2-container">
+             <div class="backarrow"></div>
+             <input type="text" id="search-input" placeholder="Show search input">          
+        </div>
+     </div>
+
+    <div class="desk-header">
+        <div class="logo2">
+            <img src="/assets/desklogo.png" alt="">
+        </div>
+        <div class="azure2">
+            <span>Azure</span>
+        </div>
+        <nav class="hd-list">
+            <ul>
+                <li class="nr-list">
+                    <div class="list-name" onclick="toggleDropdown(this)">Explore</div>
+                        
+                         <ul class="dropdown-content">
+                            <li>Get to know Active</li>
+                            <li>Global Infrastucture</li>
+                            <li>Finops on azure</li>
+                            <li>Azure Essentials</li>
+                            <li>customer stories</li>
+                            <li>Azure innovation insights</li>
+                        </ul>
+                    
+                </li>
+                <li class="nr-list">
+                    <div class="list-name" onclick="toggleDropdown(this)">Products</div>
+
+                    <ul class="dropdown-content">
+                        <li>Azure Virtual Macines</li>
+                        <li>Azure Virtual Desktop</li>
+                        <li>Azure SQL</li>
+                        <li>Microsoft Copilot in Azure</li>
+                        <li>Azure AI Services</li>
+                        <li>Azure AI Studio</li>
+                        <li>Azure Cosmos DB</li>
+                        <li>Azure Kubernetes Services(AKS)</li>
+                        <li>Azure Arc</li>
+                        <li>Azure Migrate</li>
+                        
+                    </ul>
+                </li>
+
+                <li class="nr-list">
+                    <div class="list-name" onclick="toggleDropdown(this)">Solutions</div>
+
+                    <ul class="dropdown-content">
+                        <li>Azure AI</li>
+                        <li>Migarte to innovate in the era of AI</li>
+                        <li>Build and modernize intelligent apps</li>
+                        <li>AI for data analytics</li>
+                        <li>Azure Ai Infrastructure</li>
+                        <li>Adaptive cloud</li>
+                        <li>Azure network security</li>
+                    </ul>
+                </li>
+
+                <li class="nr-list">
+                    <div class="list-name" onclick="toggleDropdown(this)">Pricing</div>
+
+                    <ul class="dropdown-content">
+                        <li>Azure pricing</li>
+                        <li>free Azure Services</li>
+                        <li>Azure account</li>
+                        <li>Flexible purchase options</li>
+                        <li>Azure benefits and incentives</li>
+                        <li>Pricing calculator</li>
+                        <li>TCO calculator</li>
+                        <li>Optimize your costs</li>
+                        <li>FinOps on Azure</li>
+                    </ul>
+
+                </li>
+
+                <li class="nr-list">
+                    <div class="list-name" onclick="toggleDropdown(this)">Patners</div>
+
+                       <ul class="dropdown-content">
+                         <li>Find a partner</li>
+                         <li>Azure Marketplace</li>
+                         <li>Become a partner</li>
+                         <li>Azure for Partners</li>
+                         <li>Azure for ISVs</li>
+                         <li>Join ISV Sucess</li>
+                       </ul>
+                </li>
+
+                <li class="nr-list">
+                    <div class="list-name" onclick="toggleDropdown(this)">Resources</div>
+
+                    <ul class="dropdown-content">
+                        <li>Get started with Azure</li>
+                        <li>Training and certifications</li>
+                        <li>Customer stories</li>
+                        <li>Analyst reports,white papers, and e-books</li>
+                        <li>Videos</li>
+                        <li>Learn more about cloud computing</li>
+                    </ul>
+                </li>
+
+                <li class="nr-list">
+                    <div class="list-name" onclick="toggleDropdown(this)">More</div>
+
+                    <ul class="dropdown-content">
+                        <li>products</li>
+                        <li>Solutions</li>
+                        <li>Pricing</li>
+                        <li>Partners</li>
+                        <li>Resources</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="search-section">
+            <div class="search-btn">
+                <p>Search</p>
+            </div>
+            
+            <div class="aftersrch-btn">
+                <ul>
+                    <li><a href="#" class="nrml">Learn</a></li>
+                    <li><a href="#" class="nrml">Support</a></li>
+                    <li><a href="#" class="nrml">Contact Sales</a></li>
+                    <li><a href="#" class="start">Get Started with Azure</a></li>
+                    <li><a href="#" class="signin">Sign in</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Show search input">
+        <button id="submit-search"><span>Cancel</span></button>
+   </div>
+    </header>
+
+    <!-----------main content-------->
+    <main>
+        <div class="main-container">
+            <div class="top-section">
+                <div class="top-img">
+                  <img src="/assets/mob540px.avif" alt="" class="view54">
+                </div>
+                <div class="topest-content">
+                      <div class="top-container">
+                        <div class="top-content">
+                            <div class="top-smallheader">AZURE. LIMITLESS INNOVATION</div>
+                            <div class="top-bigheader"><h1>It all comes down to trust</h1></div>
+                            <div class="top-para">
+                                <p>Build and deploy AI solutions confidently with privacy, safety, and security features from Azure. Pay as you go or try Azure free for up to 30 days. There's no upfront commitment—cancel anytime.</p>
+                            </div>
+                            <div class="top-buttons">
+                                <div class="azure-buttons">
+                                    <div class="blue-get">Get started with Azure</div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+
+            <div class="main-body">
+                <div class="body-header">
+                     <div class="drop-down">
+                        <div class="drop-down-container">
+                            <div class="drop-down-contents" onclick="toggleDropnav(this)"> <!--mob drop down-->
+                                <div class="dp-txt">
+                                    <div class="drop-down-text">Featured news</div>
+                                    <div class="drop-down-arrow"></div>
+                                </div>
+                                <ul class="drpnav">
+
+                                   <li><a href="#featured-news">Featured news</a></li>
+                                   <li><a href="#solutions">Solutions</a></li>
+                                   <li><a href="#Productsservices">Product and services</a></li>
+                                   <li><a href="#Resources">Resources by role</a></li>
+                                   <li><a href="#customer">Customer stories</a></li>
+
+                                </ul>
+                                <div class="drop-down-indicator"></div>   <!--underline below the nav-->
+                            </div>
+                             <div class="scroll-button-left"></div>
+                            <ul class="drop-down-nav"> <!--desk drop-->
+                                <li class="drop-down-nav-li">
+                                    <span>
+                                        <div class="nav-text"><a href="#featured-news">Featured news</a></div>
+                                        <div class="indicator2"></div>
+                                    </span>
+                                </li>
+                                <li class="drop-down-nav-li" >
+                                    <span>
+                                        <div class="indicator2-inactive"></div>
+                                        <div class="nav-text"><a href="#solutions">Solutions</a></div>
+                                    </span>
+                                </li>
+                                <li class="drop-down-nav-li">
+                                   <span>
+                                    <div class="nav-text"><a href="#Productsservices">Product and services</a></div>
+                                    <div class="indicator2-inactive"></div>
+                                   </span>
+                                </li>
+                                <li class="drop-down-nav-li">
+                                    <span>
+                                        <div class="nav-text"><a href="#resources">Resources by role</a></div>
+                                        <div class="indicator2-inactive"></div>
+                                    </span>
+                               </li>
+                               <li class="drop-down-nav-li">
+                                  <span>
+                                      <div class="nav-text"><a href="#customer">Customer stories</a></div>
+                                      <div class="indicator2-inactive"></div>
+                                  </span>
+                               </li>
+                            </ul>
+                            <div class="scroll-button-right"></div>
+                            <div class="drop-down-button">
+                                  <span>Get started with Azure</span>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+                
+
+                <div class="featured-news" id="featured-news">
+                    <div class="featured-news-container">
+                        <div class="featured-header">
+                            <div class="featured-h1">FEATURED NEWS</div>
+                            <div class="featured-h1-content">Discover whats's happening on Azure</div>
+                        </div>
+
+                        <div class="featured-news-content">
+                            <div class="featured-content-col">
+                                <div class="col-img"><img src="/assets/featured1.avif" alt=""></div>
+                                <div class="col-texts">
+                                    <div class="col-block-cont">
+                                        <div class="col-block-header">
+                                            <h3>Innovate with AI responsibly and securely</h3>
+                                        </div>
+                                        <div class="col-block-content">Secure you data and build AI apps confidently with responsible AI tools and the latest security and privacy features</div>
+                                    </div>
+                                    <div class="lnk-btn" style="margin-top: 0px;">
+                                       <div class="btn"></div>
+                                       <span>Explore responsible AI</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="featured-content-col">
+                                <div class="col-img"><img src="/assets/featured2.avif" alt=""></div>
+                                <div class="col-texts">
+                                    <div class="col-block-cont">
+                                        <div class="col-block-header">
+                                            <h3>Build on a trusted platform</h3>
+                                        </div>
+                                        <div class="col-block-content">Create next-gen AI solutions with a responsible platform dedicated to security,reliabilty, and susutainabilty.</div>
+                                    </div>
+                                     <div class="lnk-btn" style="margin-top:0px;">
+                                        <div class="btn"></div>
+                                        <span>Learn more</span>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="featured-content-col">
+                                <div class="col-img"><img src="/assets/featured3.avif" alt=""></div>
+                                <div class="col-texts">
+                                    <div class="col-block-cont">
+                                        <div class="col-block-header">
+                                            <h3>Get ready for Microsoft Ignite</h3>
+                                        </div>
+                                        <div class="col-block-content">Join us 18-22,2024 to explore the latest innovations,learn from experts,level up your skillset,and expand your network.</div>
+                                    </div>
+                                    <div class="lnk-btn" style="margin-top: 0px;">
+                                        <div class="btn"></div>
+                                        <span>Register now</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="solutions1" id="solutions">
+                    <div class="solutions1-container">
+                        <div class="solutions1-header">
+                             <div class="solutions-h1">SOLUTIONS</div>
+                             <div class="solutions-h2">Find solutions for putting your ideas into actions</div>
+                        </div>
+                        <div class="slide-bar">
+                            <div class="slide-scroll">
+                                <div class="slide-content">
+                                    <button class="slide-button blue"><span>Featured solutions</span></button>
+                                    <button class="slide-button"><span>Cloud migrations</span></button>
+                                    <button class="slide-button"><span>Data transformations</span></button>
+                                    <button class="slide-button"><span>App Development</span></button>
+                                    <button class="slide-button"><span>AI</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="solution-full-content">
+                            <div class="solution-half-content">
+                                <div class="desk-img-display">
+                                    <ul class="solutions-content">
+                                        <!-- <li class="solutions1-col1 list1" >
+                                            <div class="solution-content-indicator"></div>
+                                            <div class="solution-list-content">
+                                              <div class="solution1-col1-header" onclick="toggleSlidedown(this)">
+                                                 <button class="s1c2">
+                                                    <h3>AI</h3>
+                                                 </button>
+                                              </div>
+                                            </div>
+                                            <div class="slidedwon">
+                                               <div class="s1c1-para">
+                                                  <div class="para-cont">Build inntelligent apps at enterprise scale with Azure AI portfolio</div>
+                                                  <div class="para-link">Explore Azure AI solutions</div>
+                                                </div>
+                                              
+                                               <div class="s1c1-img">
+                                                  <img src="/assets/solutions1.avif" alt="">
+                                                  <a href="#" class="ply-btn">
+                                                    <div class="play-icon"></div>
+                                                  </a>
+                                              </div>
+                                          </div>
+                                        </li>
+                                        <li class="solutions1-col1">
+                                            <div class="solutions-content-indicator"></div>
+                                            <div class="solution-list-content">
+                                                <div class="solution1-col1-header" onclick="toggleSlidedown(this)">
+                                                    <button class="s1c2">
+                                                        <h3>responsible AI with Azure</h3>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="slidedwon">
+                                                <div class="s1c1-para">
+                                                    <div class="para-cont">Develop,use and govern AI solutins responsibly with Azure AI.</div>
+                                                    <div class="para-link">Discover responsible AI solutions</div>
+                                                  </div>
+                                                
+                                                 <div class="s1c1-img">
+                                                    <img src="/assets/solutions2.avif" alt="">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="solutions1-col1">
+                                            <div class="solutions-content-indicator"></div>
+                                            <div class="solution-list-content">
+                                                <div class="solution1-col1-header" onclick="toggleSlidedown(this)">
+                                                    <button class="s1c2">
+                                                        <h3>Trust your cloud</h3>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="slidedwon">
+                                                <div class="s1c1-para">
+                                                    <div class="para-cont">Get security, reliabilty,and sustainability from the ground up—backed by a team of experts, and proactive complaince trusted by enterprises,goverments,and startups.</div>
+                                                    <div class="para-link">learn more</div>
+                                                  </div>
+                                                
+                                                 <div class="s1c1-img">
+                                                    <img src="/assets/solutions3.avif" alt="">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="solutions1-col1">
+                                            <div class="solutions-content-indicator"></div>
+                                            <div class="solution-list-content">
+                                                <div class="solution1-col1-header" onclick="toggleSlidedown(this)">
+                                                    <button class="s1c2">
+                                                        <h3>Azure confidential Computing</h3>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="slidedwon">
+                                                <div class="s1c1-para">
+                                                    <div class="para-cont">Increase data privacy by protecting data in use.</div>
+                                                    <div class="para-link">learn about confidential computing</div>
+                                                  </div>
+                                                
+                                                 <div class="s1c1-img">
+                                                    <img src="/assets/solutions4.avif" alt="">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="solutions1-col1">
+                                            <div class="solutions-content-indicator"></div>
+                                            <div class="solution-list-content">
+                                                <div class="solution1-col1-header" onclick="toggleSlidedown(this)">
+                                                    <button class="s1c2">
+                                                        <h3>Build and mordernize intelligent apps</h3>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="slidedwon">
+                                                <div class="s1c1-para">
+                                                    <div class="para-cont">Build AI-powered,intelligent apps and enhance your critical solutions with generative AI.</div>
+                                                    <div class="para-link">learn more</div>
+                                                  </div>
+                                                
+                                                 <div class="s1c1-img">
+                                                    <img src="/assets/solutions5.avif" alt="">
+                                                </div>
+                                            </div>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                                <div class="lnk-btn lb-desk">
+                                    <div class="btn lb-desk"></div>
+                                    <span>View all solutions(40+)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="productsservices" id="Productsservices">
+                    <div class="productsservices-container">
+                        <div class="psheader">
+                            <div class="psheader-1">PRODUCTS AND SERVICES</div>
+                            <div class="psheader-2">Explore tools for bringing your vision to life</div>
+                        </div>
+                        <div class="ps-main">
+                            <div class="ps-slide-bar">
+                                <div class="psslide-scroll">
+                                    <div class="psslide-content">
+                                          <button class="slide-button blue"><span>Featured</span></button>
+                                          <button class="slide-button"><span>AI+machine learning</span></button>
+                                          <button class="slide-button"><span>Compute</span></button>
+                                          <button class="slide-button"><span>Containers</span></button>
+                                          <button class="slide-button"><span>Hybrid + multicloud</span></button>
+                                          <button class="slide-button"><span>IoT</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ps-ds-cont">
+                                <div class="ps-content">
+                                    <div class="col1-ps">
+                                        <div class="ps-col1">
+                                            <div class="background-gardient"></div>
+                                            <div class="ps-empty"></div>
+                                            <div class="ps-content1">
+                                                <div class=ps-col1-header1>Azure AI Content Safety</div>
+                                                <div class="ps-col1-para1">Use AI to monitor text and image content for safety</div>
+                                                <div class="ps-col1-explore1">Explore the product</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col2-ps">
+                                        <div class="ps-col2">
+                                            <div class="ps-content2">
+                                                <div class="ps-col1-img2"><img src="/assets/ps1.svg" alt=""></div>
+                                                <div class="ps-col1-header2">Azure AI Studio</div>
+                                                <div class="ps-col1-para2">Build, evaluate, and deploy generative AI solutions and custom copilots.</div>
+                                                <div class="ps-col1-explore2">Explore the product</div>
+                                            </div>
+                                        </div>
+                                        <div class="ps-col2">
+                                            <div class="ps-content2">
+                                                <div class="ps-col1-img2"><img src="/assets/ps2.svg" alt=""></div>
+                                                <div class="ps-col1-header2">Azure OpenAI Service</div>
+                                                <div class="ps-col1-para2">build your own Copilot and generative AI applications</div>
+                                                <div class="ps-col1-explore2">Explore the product</div>
+                                            </div>
+                                        </div>
+                                        <div class="ps-col2">
+                                            <div class="ps-content2">
+                                                <div class="ps-col1-img2"><img src="/assets/ps3.svg" alt=""></div>
+                                                <div class="ps-col1-header2">Azure AI Document Intelligence</div>
+                                                <div class="ps-col1-para2">Accelerate Information extraction from documents</div>
+                                                <div class="ps-col1-explore2">Explore the product</div>
+                                            </div>
+                                        </div>
+                                        <div class="ps-col2">
+                                            <div class="ps-content2">
+                                                <div class="ps-col1-img2"><img src="/assets/ps4.svg" alt=""></div>
+                                                <div class="ps-col1-header2">Azure AI Search</div>
+                                                <div class="ps-col1=para2">Deliver High-quality responses with a vector database built for advanced RAG and modern search.</div>
+                                                <div class="ps-col1-explore2">Explore the product</div>
+                                            </div>
+                                        </div>
+                                        <div class="ps-col2">
+                                            <div class="ps-content2">
+                                                <div class="ps-col1-img2"><img src="/assets/ps5.svg" alt=""></div>
+                                                <div class="ps-col1-header2">GitHub Advanced Security</div>
+                                                <div class="ps-col1-para2">Empower your developers to fix security isssue faster and reduce overall security risk.</div>
+                                                <div class="ps-col1-explore2">Explore the product</div>
+                                            </div>
+                                        </div>
+                                        <div class="ps-col2">
+                                            <div class="ps-content2">
+                                                <div class="ps-col1-img2"><img src="/assets/ps6.svg" alt=""></div>
+                                                <div class="ps-col1-header2">Microsoft Defender for Cloud</div>
+                                                <div class="ps-col1-para2">Help protect multicloud and hybrid enviroment with comprehensive security.</div>
+                                                <div class="ps-col1-explore2">Explore the product</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lnk-btn" style="margin-top: 1.5rem;">
+                                    <div class="btn"></div>
+                                    <span>See All products (200+)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gartner">
+                    <div class="gartner-container">
+                        <div class="gartner-box">
+                            <div class="gartner-img-container">
+                                <div class="gartner-img">
+                                    <img src="/assets/gartner.avif" alt="">
+                                </div>
+                            </div>
+                            <div class="gartner-content">
+                              <div class="gt1"></div>
+                              <div class="pd-container">
+                                <div class="gartner-th">
+                                    <div class="gartner-header">See why Gartner named Microsoft a Leader</div>
+                                </div>
+                                <div class="t-btn">
+                                    <div class="gartner-text">Discover why Microsoft was named a Leader and Positioned furthest to the right for Completeness of Vision in the 2023 Gartner® Magic Quadrant™ for Strategic Cloud Platform Services(SCPC.)</div>
+                                    <div class="gartner-btn"><a href="#"><span>Read the blog</span></a></div>
+                                </div>
+                              </div>
+                              <div class="gt2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resources" id="resources">
+                    <div class="resources-container">
+                        <div class="resources-header">
+                            <div class="resource-smlh">RESOURCES BY ROLE</div>
+                            <div class="resource-bigh">Transform the way you work</div>
+                        </div>
+                   
+                       <div class="resouces-body">
+                         <div class="resource-scroller">
+                             <div class="scroller-tab">
+                                 <a href="#" class="tab-btn tab-btn-left"><span>IT professionals</span></a>
+                                 <a href="#"class= "tab-btn"><span>Developers</span></a>
+                                 <a href="#" class="tab-btn"><span>Data analysts</span></a>
+                                 <a href="#" class="tab-btn"><span>Business leaders</span></a>
+                                 <a href="#" class="tab-btn"><span>Startups</span></a>
+                                 <a href="#" class="tab-btn tab-btn-right"><span>Students</span></a>
+                              </div>
+                          </div>
+                          <div class="resources-content">
+                             <!-- <div class="resouce-optamize">
+                                 <div class="optamize-header">Optamize your Infrastructure with popular Azure solutions and services.</div>
+                                 <div class="optamize-btn">
+                                     <div class="solutions-nav">
+                                         <div class="explore-title">
+                                             <span class="optamize-content-btn">
+                                                 <span class="optamize-btn-btn"></span>
+                                             </span>
+                                             <span class="optamize-content-text" style="padding-left: 8px;">Explore migration solutions</span>
+                                         </div>
+                                      </div>
+                                 </div>
+                              </div>
+                              <div class="resources-image">
+                                <div class="resources-img-container">
+                                    <img src="/assets/resources1.avif" alt="">
+                                </div>
+                              </div> -->
+                          </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="globe">
+                    <div class="Global-container">
+                        <div class="global-content">
+                            <div class="global-header">Azure global infrastructure</div>
+                            <div class="global-text">Go beyond limits of on-premises datacenters with more regions than any other provider.</div>
+                            <div class="global-btn">Explore the globe</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+

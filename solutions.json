@@ -1,0 +1,73 @@
+{
+    "Featured solutions":[
+        {
+            "title":"AI",
+            "description":"Build intelligent apps at enterprise scale with Azure AI portfolio",
+            "link":"Explore Azure AI solutions",
+            "image":"/assets/solutions1.avif",
+            "alt":"AI Solutions"
+        },
+        {
+              "title":"Responsible AI with Azure",
+              "description":"Develop, use, and govern AI solutions responsibly with Azure AI",
+              "link":"Discover responsible AI solutions",
+              "image":"/assets/solutions2.avif"
+        },
+        {
+            "title":"Trust your cloud",
+            "description":"Get security,reliability,and sustainability from the ground up—backed by a team of experts, and proactive compliance trusted by enterprises, governments,and startups",
+            "link":"learn more",
+            "image":"/assets/solutions3.avif"
+        },
+        {
+            "title":"Azure Confidential Computing",
+            "description":"Increase data privacy by protect data in use.",
+            "link":"Learn about confidential Computing",
+            "image":"/assets/solutions4.avif"
+        },
+        {
+            "title":"Build and modernize intelligent apps",
+            "description":"Build AI-powered, intelligent apps and enhance your critical solutions with generative AI.",
+            "link":"learn more",
+            "image":"/assets/solutions5.avif"
+
+        }
+
+    ],
+    "Cloud migrations":[
+        {
+            "title":"Migrate to innovate",
+            "description":"Get AI-ready by securely migrating Windows Server, SQL Server,SQL Server,and Linux to Azure.",
+            "link":"Learn more",
+            "image":"/assets/solutions21.avif"
+            
+        },
+        {
+            "title":"Linux on Azure",
+            "description":"Run and manage applications your way with your preffered Linux distribution on Azure.",
+            "link":"Learn more about Linux on Azure",
+            "image":"/assets/solutions22.avif"
+        },
+        {
+          "title":"SAP on the Microsoft Cloud",
+          "description":"Extend your SAP applications and innovate in the cloud trusted by SAP",
+          "link":"Explore SAP solutions",
+          "image":"/assets/solutions23.avif"
+        },
+        {
+            "title":"Oracle on Azure",
+            "description":"Migarte Oracle workload and innovate with Azure services.",
+            "link":"Discover Oracle solutions",
+            "image":"/assets/solutions24.avif"
+        },
+        {
+            "title":"High-performance computing",
+            "description":"Access computing,networking,and storage resources for HPC workloads.",
+            "link":"See HPC solutions",
+            "image":"/assets/solutions25.avif"
+
+            
+        }
+    ]
+
+}

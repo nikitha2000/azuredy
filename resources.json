@@ -1,0 +1,44 @@
+{
+    "IT professionals":[
+       { 
+        "title":"Optimize your infrastructure with popular Azure solutions and services",
+        "btn-title":"Explore migration solutions",
+        "image":"/assets/resources1.avif"
+       }
+    ],
+    "Developers":[
+        {
+            "title":"Create today's solutions and tommorow's breakthroughs",
+            "btn-title":"Innovate on Azure",
+            "image":"/assets/resources2.avif"
+        }
+    ],
+    "Data analysts":[
+        {
+            "title":"Get more value from your data with an end-to-end cloud analytics solution.",
+            "btn-title":"Explore AI for Data analytics",
+            "image":"/assets/resources3.avif"
+        }
+    ],
+    "Business leaders":[
+        {
+            "title":"Get guidance and insight on AI innovations,intelligent data,cloud infrastructure, and optimization.",
+            "btn-title":"Explore insights",
+            "image":"/assets/resources4.avif"
+        }
+    ],
+    "Startups":[
+        {
+            "title":"Future-proof your startup with AI services, expert guidance, and essential technology.",
+            "btn-title":"Explore Microsoft for Startups",
+            "image":"/assets/resources5.avif"
+        }
+    ],
+    "Students":[
+        {
+        "title":"Learn about programming,cloud technologies, and developer tools.",
+        "btn-title":"Jump-start your career",
+        "image":"/assets/resources6.avif"
+        }
+    ]
+}
