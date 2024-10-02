@@ -1,0 +1,87 @@
+[
+    {
+        "image":"/assets/customer1.avif",
+        "logo":"/assets/custlogo1.avif",
+        "text":"HP incorporated GitHub Copilot into is workflow to help developers collabrate more easily and work more productively",
+        "products": [
+            {
+                "logo": "/assets/hplogo1.svg",
+                "link": "#",
+                "name": "GitHub Copilot"
+            },
+            {
+                "logo": "/assets/hplogo2.svg",
+                "link": "#",
+                "name": "Azure Devops"
+            }
+        ]
+    },
+    {
+        "image":"/assets/customer2.avif",
+        "logo":"/assets/custlogo2.avif",
+        "text":"LEGO House takes the physical brick to new frontiers with inventive, interactive digital experiences built with Azure solutions.",
+        "products":[
+            {
+                "logo":"/assets/unity1.svg",
+                "link":"#",
+                "name":"Azure OpenAI Service."
+            },
+            {
+                "logo":"/assets/unity2.svg",
+                "link":"#",
+                "name":"Azure AI Content Safety"
+            }
+        ]
+    },
+    {
+        "image":"/assets/customer3.avif",
+        "logo":"/assets/custlogo3.avif",
+        "text":"LEGO House takes the physical brick to new frontiers with inventive, interactive digital experiences built with Azure solutions.",
+        "products":[
+            {
+                "logo":"/assets/lego1.svg",
+                "link":"#",
+                "name":"Azure IoT Edge."
+            },
+            {
+                "logo":"/assets/lego2.svg",
+                "link":"#",
+                "name":"Azure Kubernetes(AKS)"
+            }
+        ]
+    },
+    {
+        "image":"/assets/customer4.avif",
+        "logo":"/assets/custlogo4.avif",
+        "text":"Siemens connects frontline workers and engineer for real-time problem-solving using Azure AI Studio.",
+        "products":[
+            {
+                "logo":"/assets/siemens1.avif",
+                "link":"#",
+                "name":"Azure AI"
+            },
+            {
+                "logo":"/assets/siemens2.avif",
+                "link":"#",
+                "name":"Azure AI Studio"
+            }
+        ]
+    },
+    {
+        "image":"/assets/customer5.avif",
+        "logo":"/assets/custlogo5.avif",
+        "text":"HEINEKEN built chatbots that connect employees with information across the comapny using Azure OpenAI Service and its built-in ChatGPT capabilities.",
+        "products":[
+            {
+                "logo":"/assets/heinken1.svg",
+                "link":"#",
+                "name":"Azure AI"
+            },
+            {
+                "logo":"/assets/heinken2.svg",
+                "link":"#",
+                "name":"Azure OpenAI Service"
+            }
+        ]
+    }
+]

@@ -282,3 +282,101 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 });
 //======================================================================================================
+//========================================================customer======================================
+
+let currentIndex = 0;
+let customers = [];
+
+fetch('customer.json')
+  .then(res => res.json())
+  .then(data => {
+      customers=data;
+      renderCustomerBoxes();
+  })
+  .catch(error => console.log('error fertching:',error));
+
+  function renderCustomerBoxes() {
+    const slider = document.querySelector('.customer-box-wrapper');
+    slider.innerHTML = '';
+
+ customers.forEach(customer => {
+    const customerBox = document.createElement('div')
+    customerBox.className = 'customer-box';
+
+    customerBox.innerHTML = `
+            <div class="customer-box-contents">
+                <div class="customer-img">
+                    <div class="content-img-container">
+                        <img src="${customer.image}" alt="Customer Image">
+                    </div>
+                </div>
+                <div class="content-txt">
+                    <div class="lego-content">
+                        <div class="lego-logo">
+                            <div class="lego-logo-container">
+                                <img src="${customer.logo}" alt="Customer Logo">
+                            </div>
+                        </div>
+                        <div class="lego-text">${customer.text}</div>
+                    </div>
+                    <div class="products-content">
+                        <div class="products-nav">
+                            <div class="product-header">Products</div>
+                            <div class="product-link">
+                                ${customer.products.map(product => `
+                                    <div class="AzureIoT">
+                                        <img src="${product.logo}" alt="${product.name} Logo">
+                                        <a href="${product.link}">${product.name}</a>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                        <div class="case-study"><a href="#"><span>Case Study</span></a></div>
+                    </div>
+                </div>
+            </div>
+        `;
+        slider.appendChild(customerBox);
+    });
+  }
+
+  function updateSliderPosition() {
+    const sliderWrapper = document.querySelector('.customer-box-wrapper');
+    const slideWidth = sliderWrapper.clientWidth; // Full width of the slider
+    sliderWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    
+  }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const leftArrow = document.querySelector('.cls-arrow-left');
+    const rightArrow = document.querySelector('.cls-arrow-right');
+    
+
+    leftArrow.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSliderPosition();
+        }
+    });
+
+    rightArrow.addEventListener('click', () => {
+        if (currentIndex < customers.length - 1) {
+            currentIndex++;
+            updateSliderPosition();
+        }
+    });
+
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const logoListElements = document.querySelectorAll('.logo-list-element');
+
+    // Add click event listeners to each logo list element
+    logoListElements.forEach((li) => {
+        li.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent default anchor behavior
+            currentIndex = parseInt(li.getAttribute('data-index')); // Set currentIndex based on clicked item
+            updateSliderPosition(); // Update slider position
+        });
+    });
+});

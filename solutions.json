@@ -68,6 +68,33 @@
 
             
         }
+    ],
+    "Data transformations":[
+        {
+            "title":"AI For data analytics",
+            "description":"Realize value from data and generate near-real-time insights with advanced cloud-scale analytics solutions.",
+            "link":"Discover AI for data analytics",
+            "image":"assets/solutions31.avif"
+        },
+        {
+            "title":"Azure managed databases",
+            "description":"Build cloud-native applications or modernize existing applications with fully managed,flexible databases",
+            "link":"Explore managed databases",
+            "image":"/assets/solutions32.avif"
+        },
+        {
+            "title":"Application and data modernization",
+            "description":"Deliver enhanced application and data experiences even faster.",
+            "link":"Discover app and data modernization",
+            "image":"/assets/solutions34.avif"
+
+        },
+        {
+            "title":"Business intelligence",
+            "description":"drive faster, more effecient decision making by drawing deeper insights from your analytics.",
+            "link":"learn more about business intelligence",
+            "image":"/assets/solutions35.avif"
+        }
     ]
 
 }
