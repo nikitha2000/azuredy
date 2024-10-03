@@ -204,6 +204,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     buttons.forEach(button => {
         button.addEventListener('click', () => {
+            button.style.backgroundColor = "#005597";
+            button.style.color = 'white'
             const category = button.textContent.trim();
             updateSolutions(solutionsData, category);
         });
@@ -380,3 +382,134 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// -----------------------------------------products and services----------------------------------------------
+let productsData = {};
+
+fetch('products.json')
+    .then(resp => {
+        if(!resp.ok){
+            throw new Error('Network response error');
+        }
+        return resp.json();
+    })
+    .then(data => {
+        console.log(data);
+        productsData = data;
+        updateContent("Featured");
+    })
+    .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+    });
+
+    function updateContent(category) {
+        const products = productsData.products[category];
+        const productsContent = document.getElementById('productContent')
+           
+
+        console.log("Selected category:", category);
+        console.log("Products data:", products);
+    
+
+
+        if (!products) {
+            console.error(`No products found for category: ${category}`);
+            return;
+        }
+
+      const col1HTML = `
+        <div class="col1-ps">
+            <div class="ps-col1" style="background-image: url(${products.col1.backgroundImage});">
+                <div class="background-gardient");"></div>
+                <div class="ps-empty"></div>
+                <div class="ps-content1">
+                    <div class="ps-col1-header1">${products.col1.header}</div>
+                    <div class="ps-col1-para1">${products.col1.description}</div>
+                    <div class="ps-col1-explore1">Explore the product</div>
+                </div>
+            </div>
+        </div>
+        <div class="col2-ps">
+            <div class="ps-col2">
+                <div class="ps-content2">
+                    <div class="ps-col1-img2"><img src="${products.col2[0].image}" alt="${products.col2[0].header}"></div>
+                    <div class="ps-col1-header2">${products.col2[0].header}</div>
+                    <div class="ps-col1-para2">${products.col2[0].description}</div>
+                    <div class="ps-col1-explore2">Explore the product</div>
+                </div>
+            </div>
+            <div class="ps-col2">
+                <div class="ps-content2">
+                    <div class="ps-col1-img2"><img src="${products.col2[1].image}" alt="${products.col2[1].header}"></div>
+                    <div class="ps-col1-header2">${products.col2[1].header}</div>
+                    <div class="ps-col1-para2">${products.col2[1].description}</div>
+                    <div class="ps-col1-explore2">Explore the product</div>
+                </div>
+            </div>
+            
+            <div class="ps-col2">
+                <div class="ps-content2">
+                    <div class="ps-col1-img2"><img src="${products.col2[2].image}" alt="${products.col2[2].header}"></div>
+                    <div class="ps-col1-header2">${products.col2[2].header}</div>
+                    <div class="ps-col1-para2">${products.col2[2].description}</div>
+                    <div class="ps-col1-explore2">Explore the product</div>
+                </div>
+            </div>
+             
+            <div class="ps-col2">
+                <div class="ps-content2">
+                    <div class="ps-col1-img2"><img src="${products.col2[3].image}" alt="${products.col2[3].header}"></div>
+                    <div class="ps-col1-header2">${products.col2[3].header}</div>
+                    <div class="ps-col1-para2">${products.col2[3].description}</div>
+                    <div class="ps-col1-explore2">Explore the product</div>
+                </div>
+            </div>
+
+             <div class="ps-col2">
+                <div class="ps-content2">
+                    <div class="ps-col1-img2"><img src="${products.col2[4].image}" alt="${products.col2[4].header}"></div>
+                    <div class="ps-col1-header2">${products.col2[4].header}</div>
+                    <div class="ps-col1-para2">${products.col2[4].description}</div>
+                    <div class="ps-col1-explore2">Explore the product</div>
+                </div>
+            </div>
+
+             <div class="ps-col2">
+                <div class="ps-content2">
+                    <div class="ps-col1-img2"><img src="${products.col2[5].image}" alt="${products.col2[5].header}"></div>
+                    <div class="ps-col1-header2">${products.col2[5].header}</div>
+                    <div class="ps-col1-para2">${products.col2[5].description}</div>
+                    <div class="ps-col1-explore2">Explore the product</div>
+                </div>
+            </div>
+
+        </div>
+     `;
+
+      productsContent.innerHTML = col1HTML;
+
+      const buttons = document.querySelectorAll('.slide-button');
+      let activeButton = null;
+
+      buttons.forEach(button => {
+            button.addEventListener('click', () => {
+            
+            const category = button.textContent.trim().replace(' ', '_');
+
+            updateContent(category);
+
+            button.classList.add('blue');
+
+            console.log('Current activeButton:', activeButton ? activeButton.textContent : 'null');
+
+            if( activeButton && activeButton !== button){
+                console.log('Removing blue from:', activeButton.textContent)
+                activeButton.classList.remove('blue');
+            }
+
+            activeButton = button;
+            console.log('Active button now:', activeButton.textContent);
+        });
+      });
+
+    }

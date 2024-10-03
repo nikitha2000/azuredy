@@ -1,0 +1,238 @@
+{
+    "products":{
+        "Featured":{
+            "col1":{
+                "header":"Azure AI Content Safety",
+                "description":"Use AI to monitor text and image content for safety.",
+                "backgroundImage":"/assets/psbck.avif"
+            },
+            "col2":[
+                {
+                    "header": "Azure AI Studio",
+                    "description": "Build, evaluate, and deploy generative AI solutions and custom copilots.",
+                    "image": "/assets/ps1.svg"  
+                },
+                {
+                    "header":"Azure OpenAI Service",
+                    "description":"Build your own copilot and generative AI applications.",
+                    "image":"/assets/ps2.svg"
+                },
+                {
+                    "header":"Azure AI Document Intelligence",
+                    "description":"Build your own copilot and generative AI applications.",
+                    "image":"/assets/ps3.svg"
+                },
+                {
+                    "header":"Azure AI Search",
+                    "description":"Deliver high-quality responses with a vector database built for advanced RAG and modern search.",
+                    "image":"/assets/ps4.svg"
+                },
+                {
+                    "header":"GitHub Advanced Security",
+                    "description":"Empower your developers to fix security issues faster and reduce overall security risk.",
+                    "image":"/assets/ps5.svg"
+                },
+                {
+                    "header":"Microsoft Defender for cloud",
+                    "description":"Help protect Multicloud and hybrid environments with comprehensive security.",
+                    "image":"/assets/ps6.svg"
+                }
+            ]
+        },
+       "AI+machine_learning": {
+              "col1":{
+                "header":"Azure AI Studio",
+                "description":"Build,evaluate, and deploy generative AI solutions and customs copilots.",
+                "backgroundImage":"/assets/psbck2.avif"
+              },
+              "col2":[
+                {
+                   "header":"Azure OpenAI Service",
+                   "description":"Apply advanced coding and language models to a variety of use cases.",
+                   "image":"/assets/ps2.svg"
+                },
+                {
+                    "header":"Azure AI Search",
+                    "description":"Deliver accurate,Hyper-personalized responses in your generative AI applications.",
+                    "image":"/assets/ps4.svg"
+                },
+                {
+                    "header":"Azure AI Content Safety",
+                    "description":"Use AI to monitor text and image content for safety.",
+                    "image":"/assets/ps23.svg"
+                },
+                {
+                    "header":"Azure Machine Learning",
+                    "description":"Discover computer vision insights from image and video analysis with OCR and AI.",
+                    "image":"/assets/ps24.svg"
+                },
+                {
+                    "header":"Azure AI Vision",
+                    "description":"Discover computer vision insights from image and video analysis with OCR and AI.",
+                    "image":"/assets/ps25.svg"
+                },
+                {
+                    "header":"Azure AI Language",
+                    "description":"Build intelligent applications with natural language processing capabilities.",
+                    "image":"/assets/ps26.svg"
+                }
+              ]
+           },
+       "Compute":{
+        "col1":{
+            "header":"Azure Virtual Machines",
+            "description":"Deloy VMs in seconds.",
+            "backgroundImage":"/assets/psbck3.avif"
+           },
+         "col2":[
+            {
+                "header":"Azure Kubernetes Service (AKS)",
+                "description":"Build and scale apps with managed Kubernetes.",
+                "image":"/assets/ps31.svg"
+            },
+            {
+                "header":"Linux virtual machines in Azure",
+                "description":"Provision VMs for Ubuntu,Red Hat SUSE,and other popular distributions",
+                "image":"/assets/ps32.svg"
+            },
+            {
+                "header":"SQL Server on Azure Virtual Machines",
+                "description":"Get industry-leading performance for SQL.",
+                "image":"/assets/ps33.svg"
+            },
+            {
+                "header":"Windows Virtual Machines",
+                "description":"Deploy scalable.protected virtualized infrastructure.",
+                "image":"/assets/ps34.svg"
+            },
+            {
+                "header":"Azure Functions",
+                "description":"Trigger apps with servless computing.",
+                "image":"/assets/ps35.svg"
+            },
+            {
+                "header":"Azure App Service",
+                "description":"Expand apps to additional locations.",
+                "image":"/assets/ps36.svg"
+            }
+         ]
+       },
+       "Containers":{
+          "col1":{
+            "header":"Azure Kubernetes Service (AKS)",
+            "description":"Build and scale apps with managed Kubernetes.",
+            "backgroundImage":"/assets/psbck4.avif"
+          },
+          "col2":[
+            {
+                "header":"Azure App Service",
+                "description":"Quickly create powerful cloud for web and mobile.",
+                "image":"/assets/ps41.svg"
+            },
+            {
+                "header":"Azure Functions",
+                "description":"Trigger apps with serverless computing.",
+                "image":"/assets/ps42.svg"
+            },
+            {
+                "header":"Azure Kubernetes Fleet Manager PREVIEW",
+                "description":"Seamlessly manage Kubernetes clusters at scale.",
+                "image":"/assets/ps43.svg"
+            },
+            {
+                "header":"Azure Container Instances",
+                "description":"Run container without managing servers.",
+                "image":"/assets/ps44.svg"
+            },
+            {
+                "header":"Azure Red Hat OpenShift",
+                "description":"Build,deploy,and scale apps on fully managed Openshift clusters.",
+                "image":"/assets/ps45.svg"
+            },
+            {
+                "header":"Azure Spring Apps",
+                "description":"Build or migrate Spring applications with a fully managed service.",
+                "image":"/assets/ps46.svg"
+            }
+          ]
+       },
+       "Hybrid+multicloud":{
+          "col1":{
+                "header":"Azure Arc",
+                "description":"Build and scale apps with managed Kubernetes.",
+                "backgroundImage":"/assets/psbck5.avif"
+            },
+          "col2":[
+            {
+                "header":"Azure SQL",
+                "description":"Migrate and modernize your SQL workloads.",
+                "image":"/assets/ps51.svg"
+            },
+            {
+                "header":"Azure Stack",
+                "description":"Build apps across on-premises,cloud,and the edge.",
+                "image":"/assets/ps52.svg"
+            },
+            {
+                "header":"Microsoft Sentinel",
+                "description":"Simplify security operations with intelligent security analytics.",
+                "image":"/assets/ps53.svg"
+            },
+            {
+                "header":"Microsoft Defender for Cloud",
+                "description":"Protect multicloud and hybrid environments.",
+                "image":"/assets/ps54.svg"
+            },
+            {
+                "header":"Azure ExpressRoute",
+                "description":"Create secure,private clouds.",
+                "image":"/assets/ps55.svg"
+            },
+            {
+                "header":"Azure DevOps",
+                "description":"Share code,track work,and ship software with modern dev services.",
+                "image":"/assets/ps56.svg"
+            }
+         ]
+       },
+       "IoT":{
+        "col1":{
+            "header":"Azure IoT Hub",
+            "description":"Authenticate communication across devices,edge, and cloud.",
+            "backgroundImage":"/assets/psbck6.avif"
+          },
+          "col2":[
+            {
+                "header":"Azure IoT Central",
+                "description":"Build IoT solutions on a hosted platform.",
+                "image":"/assets/ps61.svg"
+            },
+            {
+                "header":"Azure IoT Edge",
+                "description":"Deploy cloud intelligence on local edge decices.",
+                "image":"/assets/ps62.svg"
+            },
+            {
+                "header":"Microsoft Defender for IoT",
+                "description":"Protect IoT and OT devices from threats.",
+                "image":"/assets/ps63.svg"
+            },
+            {
+                "header":"Azure Digital Twins",
+               "description":"Create models of physical environments.",
+               "image":"/assets/ps64.svg"   
+            },
+            {
+                "header":"Azure sphere",
+                "description":"Secure your IoT hardware and software.",
+                "image":"/assets/ps65.svg"
+            },
+            {
+                "header":"Azure Time Series Insights",
+                "description":"Visualize IoT data in real time",
+                "image":"/assets/ps66.svg"
+            }
+          ]
+       }
+    }
+}
