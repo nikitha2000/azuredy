@@ -11,7 +11,7 @@
     <div class="mob-header">
         <div class="mheader1">
             <div class="searchbar">
-                <div class="barbtn" onclick="toggleDroopdown(this)"></div>
+                <div class="barbtn" onclick="toggleDroppdown(this)"></div>
 
                 <ul class="dropdown-content mobdrop" >
                     <li style="min-height:0px; padding: 0;"></li>
@@ -194,6 +194,9 @@
         </div>
     </div>
     <div class="search-container">
+        <div class="logo2 search-l">
+            <img src="/assets/desklogo.png" alt="">
+        </div>
         <input type="text" id="search-input" placeholder="Show search input">
         <button id="submit-search"><span>Cancel</span></button>
    </div>
@@ -234,18 +237,19 @@
                                     <div class="drop-down-text">Featured news</div>
                                     <div class="drop-down-arrow"></div>
                                 </div>
-                                <ul class="drpnav">
+                                <ul class="drpnav" style="scrollbar-width:0px">
 
                                    <li><a href="#featured-news">Featured news</a></li>
                                    <li><a href="#solutions">Solutions</a></li>
                                    <li><a href="#Productsservices">Product and services</a></li>
                                    <li><a href="#Resources">Resources by role</a></li>
-                                   <li><a href="#customer">Customer stories</a></li>
+                                   <li style="border-bottom: 1px solid black;"><a href="#customer">Customer stories</a></li>
+                                   <li style="margin: 12px 0px;"><button class="blue-get" style="flex-grow: 1; padding: 12px 4px; display: flex;">Get started With azure</button></li>
 
                                 </ul>
                                 <div class="drop-down-indicator"></div>   <!--underline below the nav-->
                             </div>
-                             <div class="scroll-button-left"></div>
+                             
                             <ul class="drop-down-nav"> <!--desk drop-->
                                 <li class="drop-down-nav-li">
                                     <span>
@@ -278,9 +282,14 @@
                                   </span>
                                </li>
                             </ul>
-                            <div class="scroll-button-right"></div>
-                            <div class="drop-down-button">
-                                  <span>Get started with Azure</span>
+                            <div class="slider-arrows">
+                                <button type="button" class="slider-arrow-prev"></button>
+                                <div class="slider-arrow-prev slider-arrow-prev-bg"></div>
+                                <button type="button" class="slider-arrow-next"></button>
+                                <div class="slider-arrow-next slider-arrow-next-bg"></div>
+                            </div> 
+                            <div class="drop-down-button" style="min-height: 24px;">
+                                  <span style="min-height: 24px !important;">Get started with Azure</span>
                             </div>
                         </div>
                      </div>
@@ -359,6 +368,12 @@
                                     <button class="slide-button"><span>Data transformations</span></button>
                                     <button class="slide-button"><span>App Development</span></button>
                                     <button class="slide-button"><span>AI</span></button>
+                                </div>
+                                <div class="tab-arrows">
+                                    <button type="button" class="arrow-prev"></button>
+                                    <div class="arrow-prev arrow-prev-bg"></div>
+                                    <button type="button" class="arrow-next"></button>
+                                    <div class=" arrow-next arrow-next-bg"></div>
                                 </div>
                             </div>
                         </div>
@@ -496,6 +511,12 @@
                                           <button class="slide-button"><span>Hybrid+multicloud</span></button>
                                           <button class="slide-button"><span>IoT</span></button>
                                     </div>
+                                    <div class="ps-arrows">
+                                        <button type="button" class="ps-arrows-prev"></button>
+                                        <div class="ps-arrows-prev  ps-arrows-prev-bg"></div>
+                                        <button type="button" class="ps-arrows-next"></button>
+                                        <div class="ps-arrows-next ps-arrows-next-bg"></div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="ps-ds-cont">
@@ -610,6 +631,12 @@
                                  <a href="#" class="tab-btn"><span>Business leaders</span></a>
                                  <a href="#" class="tab-btn"><span>Startups</span></a>
                                  <a href="#" class="tab-btn tab-btn-right"><span>Students</span></a>
+                              </div>
+                              <div class="res-arrows">
+                                 <button type="button" class="res-arrows-prev"></button>
+                                 <div class="res-arrows-prev res-arrows-prev-bg"></div>
+                                 <button type="button" class="res-arrows-next"></button>
+                                 <div class="res-arrows-next res-arrows-next-bg"></div>
                               </div>
                           </div>
                           <div class="resources-content">
@@ -901,6 +928,11 @@
             <div>
         </div>
     </footer>
+    <section class="sticky-bottom">
+         <div class="sb-button">
+            <button class="blue-bg">Chat with sales</button>
+         </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>

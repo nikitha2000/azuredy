@@ -1,12 +1,14 @@
 //mobile header dynamic dislay
 function toggleDroopdown(element){
     const currenltyOpenDropdowns = document.querySelectorAll('.dropdown-content.show');
+    
     const dropdown = element.nextElementSibling;
 
     currenltyOpenDropdowns.forEach(openDropdown => {
         if(openDropdown !== dropdown) {
-            openDropdown.classList.remove('show');
+            openDropdown.classList.remove('shoow');
             openDropdown.previousElementSibling.classList.remove('active');
+            
         }
     });
 
@@ -19,11 +21,46 @@ window.onclick = function(event) {
     if (!event.target.matches('.barbtn') && !event.target.matches('.azuretxt') && !event.target.closest('.dropdown-content')) {
         const dropdowns = document.querySelectorAll('.dropdown-content');
         dropdowns.forEach(dropdown => {
-            dropdown.classList.remove('show'); // Close all dropdowns
-            dropdown.previousElementSibling.classList.remove('active'); // Remove active class
+            dropdown.classList.remove('shoow'); // Close all dropdowns
+            dropdown.previousElementSibling.classList.remove('bactive'); // Remove active class
         });
     }
 };
+
+
+// ===============================================================================================================================
+function toggleDroppdown(element){
+    const currenltyOpenDropdowns = document.querySelectorAll('.dropdown-content.show');
+    
+    const dropdown = element.nextElementSibling;
+
+    currenltyOpenDropdowns.forEach(openDropdown => {
+        if(openDropdown !== dropdown) {
+            openDropdown.classList.remove('shoow');
+            openDropdown.previousElementSibling.classList.remove('bactive');
+            
+        }
+    });
+
+    dropdown.classList.toggle('shoow');
+    element.classList.toggle('bactive');
+}
+
+window.onclick = function(event) {
+    // Close dropdowns if clicked outside
+    if (!event.target.matches('.barbtn') && !event.target.matches('.azuretxt') && !event.target.closest('.dropdown-content')) {
+        const dropdowns = document.querySelectorAll('.dropdown-content');
+        dropdowns.forEach(dropdown => {
+            dropdown.classList.remove('shoow'); // Close all dropdowns
+            dropdown.previousElementSibling.classList.remove('bactive'); // Remove active class
+        });
+    }
+};
+
+
+
+
+
 //--------------------------------------------------------------------------------------
 const searchButton = document.querySelector('.search-btn');
 
@@ -79,18 +116,24 @@ backarrow.addEventListener('click', function() {
     barbtn.style.display = barbtn.style.display === 'flex' ? 'none' : 'flex';
     });
 
-//----------------------------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------desk header dropdown---------------------------------------------------------------------------------------
 
 function toggleDropdown(element) {
     const currentlyOpenDropdown = document.querySelector('.dropdown-content.show');
-
     const dropdown = element.nextElementSibling;
+    const parentListname = element.closest('.nr-list');
+
+    const isActive = dropdown.classList.contains('show');
     
      //is there anything opened and if yes does it equals to dropdown
     if(currentlyOpenDropdown && currentlyOpenDropdown !==  dropdown) {
         currentlyOpenDropdown.classList.remove('show');
+        currentlyOpenDropdown.previousElementSibling.classList.remove('active'); // Reset active class on previous button
+        currentlyOpenDropdown.closest('.nr-list').classList.remove('active');
     }
     dropdown.classList.toggle('show');
+    element.classList.toggle('active', !isActive); // Add or remove the 'active' class
+    parentListname.classList.toggle('active', !isActive);
 }
 
 
@@ -99,6 +142,8 @@ window.onclick = function(event) {
         const dropdowns = document.querySelectorAll('.dropdown-content');
         dropdowns.forEach(dropdown => {
             dropdown.classList.remove('show'); // Close all dropdowns
+            dropdown.previousElementSibling.classList.remove('active'); // Reset all button states
+            dropdown.closest('.nr-list').classList.remove('active');
         });
     }
 }
@@ -513,3 +558,127 @@ fetch('products.json')
       });
 
     }
+
+    // --------------------------------------------------------body header-----------------------------
+    const navItems = document.querySelectorAll('.drop-down-nav-li');
+    const prevButton = document.querySelector('.slider-arrow-prev');
+    const nextButton = document.querySelector('.slider-arrow-next');
+
+    let currentInd = 0;
+
+    function updateArrow() {
+        prevButton.style.display = currentInd > 0 ? 'block' : 'none';
+        nextButton.style.display = currentInd < navItems.length - 1 ? 'block' : 'none';
+    }
+
+    function slideNext() {
+        if (currentInd < navItems.length - 1) {
+            currentInd++;
+            navItems.forEach((item) => {
+                item.style.transform = `translateX(-${currentInd * 100}%)`;
+            });
+            updateArrow();
+        }
+    }
+
+    function slidePrev() {
+        if(currentInd > 0) {
+            currentInd--;
+            navItems.forEach((item) => {
+                item.style.transform = `translateX(-${currentInd * 100}%)`;
+            });
+            updateArrow();
+        }
+    }
+
+    nextButton.addEventListener('click', slideNext);
+    prevButton.addEventListener('click', slidePrev);
+
+    updateArrow()
+
+// ----------------------------------------------------------------solutions arrow ----------------------------
+const tabItems = document.querySelector('.slide-scroll');
+const prevButtons = document.querySelector('.arrow-prev');
+const nextButtons = document.querySelector('.arrow-next');
+
+
+let scrollamount = 300;
+
+function updateArrrows() {
+    prevButtons.style.display = tabItems.scrollLeft > 0 ? 'block' : 'none';
+    nextButtons.style.display = tabItems.scrollLeft < (tabItems.scrollWidth - tabItems.clientWidth) ? 'block' : 'none';
+}
+
+function scrollNext() {
+    tabItems.scrollBy({ left: scrollamount, behavior: 'smooth' });
+    updateArrrows();
+}
+
+function scrollPrev() {
+    tabItems.scrollBy({ left: -scrollamount, behavior: 'smooth' });
+    updateArrrows();
+}
+
+nextButtons.addEventListener('click', scrollNext);
+prevButtons.addEventListener('click', scrollPrev);
+
+updateArrrows();
+
+// -----------------------------------------------------products and services------------------------------------------------------
+const psItems = document.querySelector('.psslide-scroll');
+const prevvButtons = document.querySelector('.ps-arrows-prev');
+const nexxtButtons = document.querySelector('.ps-arrows-next');
+
+let scrollAmounts = 300;
+
+function updateArrowVisibility() { // Renamed function
+    prevvButtons.style.display = psItems.scrollLeft > 0 ? 'block' : 'none';
+    nexxtButtons.style.display = psItems.scrollLeft < (psItems.scrollWidth - psItems.clientWidth) ? 'block' : 'none';
+}
+
+function scrollNexxt() {
+    psItems.scrollBy({ left: scrollAmounts, behavior: 'smooth' });
+    updateArrowVisibility(); // Updated function call
+}
+
+function scrollPrexv() {
+    psItems.scrollBy({ left: -scrollAmounts, behavior: 'smooth' });
+    updateArrowVisibility(); // Updated function call
+}
+
+// Event listeners
+nexxtButtons.addEventListener('click', scrollNexxt);
+prevvButtons.addEventListener('click', scrollPrexv);
+
+// Initial arrow visibility check
+updateArrowVisibility();
+// -----------------------------------------------------------------resources by role-----------------------
+const productScrollerContainer = document.querySelector('.resource-scroller');
+const prevResourceButton = document.querySelector('.res-arrows-prev');
+const nextResourceButton = document.querySelector('.res-arrows-next');
+
+const resourceScrollAmount = 300;
+
+function updateResourceButtonVisibility(){
+    prevResourceButton.classList.toggle('ractive',productScrollerContainer.scrollLeft > 0);
+    nextResourceButton.classList.toggle('ractive', productScrollerContainer.scrollLeft < (productScrollerContainer.scrollWidth - productScrollerContainer.clientWidth));
+}
+
+function scrollResourceNext() {
+    productScrollerContainer.scrollBy({left: resourceScrollAmount, behavior: 'smooth'});
+    updateResourceButtonVisibility();
+}
+
+function scrollResourcePrev(){
+    productScrollerContainer.scrollBy({left: -resourceScrollAmount, behavior: 'smooth'});
+    updateResourceButtonVisibility()
+}
+
+nextResourceButton.addEventListener('click', scrollResourceNext);
+prevResourceButton.addEventListener('click', scrollResourcePrev);
+
+updateResourceButtonVisibility();
+
+// ===============================================================================================================
+
+
